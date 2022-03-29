@@ -39,6 +39,8 @@ function Join() {
 
     return (
         <>
+            <div>aDSDDADS</div>
+            
             {loading === 'none' ? <SplashBg /> : null}
             <div id="JoinBox" style={{ display: `${loading}` }}>
                 <h1 id="Logo">Login</h1>
