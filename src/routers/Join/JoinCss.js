@@ -1,6 +1,9 @@
+import styled from 'styled-components';
+
+const JoinCss = styled.div`
 
 
-  body {
+body {
     background-color:#f9f6fa;
   }
 
@@ -137,8 +140,9 @@
      transform: translate(-50%,-50%);
 
 }
-#JoinBox{ animation: 0.3s ease-in-out loadEffect1; }
-.flasg{ animation: 0.4s ease-in-out loadEffect1; }
+.flasg{ animation: 0.6s ease-in-out loadEffect1; }
+#WaveEffect{ animation: 3.5s ease-in-out loadEffect1; }
+#JoinBox{ animation:test 2.2s;}
 
 @keyframes loadEffect1 {
     0%{
@@ -148,6 +152,15 @@
         opacity: 1;
     }
 }
+
+
+@keyframes test{
+
+0%{top:-300px;}
+100%{top:373px;}
+
+}
+
 
 .Links {
     cursor: pointer;
@@ -165,7 +178,6 @@
     color: #1B7DC5; 
     border: none; 
     background-color: transparent;
-    /* background-color: rgba(255, 255, 255, 0);  */
     font-size: 1vw; 
     margin-top: 0.4vh;
 }
@@ -173,3 +185,6 @@
 #SignUpL {
     color: #FE769B;
 }
+`
+
+export default JoinCss

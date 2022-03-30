@@ -4,18 +4,18 @@ import Wave from 'react-wavify'
 function WaveEffect() {
     return (
         <>
-            <div style={{
+            <div id='WaveEffect' style={{
                 position: 'relative',
                 top: '90vh',
                 backgroundColor: '#FCE9E9',
                 height: '10vh',
-
+                
             }}>
                 <Wave fill='#FCC4C4'
                     paused={false}
                     options={{
                         height: 50,
-                        amplitude: 65,
+                        amplitude: 25,
                         speed: 0.5,
                         points: 3
                     }}

@@ -11,8 +11,8 @@ function App() {
         <BrowserRouter>
             <GlobalStyle />
             <Routes>
-                <Route path="/" exact element={<Home />}></Route>
-                <Route path="/:id" element={<Join />}></Route>
+                <Route path="/" element={<Join />}></Route>
+                <Route path="/:id" exact element={<Home />}></Route>
                 <Route path="/MissId" element={<MissId />}></Route>
             </Routes>
         </BrowserRouter>
