@@ -1,0 +1,99 @@
+
+#balck {
+    position:fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.265);
+    width:100%;
+    height: 100%;
+    animation: 0.5s ease-in-out loadEffect1;
+}
+
+@keyframes loadEffect1 {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+#back {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60vw;
+    height: 80vh;
+    background-image: url(../IMG/DailyBackground/DailyBgLine.png);
+    background-size: 100% 100%;
+    animation:test 1.2s;
+}
+
+
+
+@keyframes test{
+
+    0%{top:-30vh;}
+    100%{top:50vh;}
+    
+    }
+
+#back > p {
+
+    color: black;
+    font-size: 2.4vw;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+
+#dailyNote {
+    position: relative;
+    width: 50.5vw;
+    height: 62vh;
+    top: -0.1vh;
+    left: 5vw;
+
+    line-height: 7vh;
+    margin-bottom: 10px;    
+    background: transparent;
+    border: none;
+    resize: none;
+    overflow: hidden;
+    font-size: 2vw;
+}
+
+#dailyNote:focus {
+    outline: none;
+}
+
+#sibal {
+    position: relative;
+    left: 44.6vw;
+    bottom: 4vh;
+        display: flex;
+        flex-direction: row;
+        gap: 1vw;
+}
+
+#sibal > button {
+    cursor: pointer;
+    background-color: transparent;
+    padding: 0 1.1vw;
+    line-height: 4vh;
+    border-radius: 4px;
+    font-size: 1.5vw;
+}
+
+#sibal > button:nth-child(1) {
+    border: 1px solid #00000000;
+    background-color: #000000a0;
+    color: white;
+}
+#sibal > button:nth-child(2) {
+    border: 1px solid #000000a0;
+    background-color: white;
+    color: #000000a0;
+    
+}
+

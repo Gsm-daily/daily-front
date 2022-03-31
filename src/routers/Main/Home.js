@@ -11,6 +11,8 @@ import IconLeftAngle from "../../IMG/MAIN-IC/leftAngle.png"
 import Snowfall from 'react-snowfall'
 import { Link } from 'react-router-dom';
 
+import Daily  from '../../components/Daily.js';
+
 import { useState, useEffect } from "react";
 
 
@@ -92,6 +94,10 @@ function Article() {
     month: date.getMonth(),
     day: date.getDate()
   })
+
+
+  const [daily,setDaily] = useState(false)
+
 
   const prevMonth = () => {
     date.setMonth(date.getMonth() - 1)
@@ -175,7 +181,7 @@ function Article() {
                           dayOfTheWeek.map((Day, index) => {
                             return (
                               toDay.month === Day.month && toDay.year === Day.year && toDay.day === Day.day ?
-                                <td key={index}><span id="ToDay" style={{ backgroundColor: `${seasonColor.color.toDay}` }} >{Day.day}</span></td> :
+                                <td key={index}><span id="ToDay" onClick={() => {setDaily(true)}} style={{ backgroundColor: `${seasonColor.color.toDay}` }} >{Day.day}</span></td> :
                                 <td key={index}>{Day.day}</td>)
                           })
                         }
@@ -189,6 +195,7 @@ function Article() {
           </div>
           <img className="iconAngle" onClick={nextMonth} src={IconRightAngle} />
         </div>
+        {daily ?  <Daily onClose={() => {setDaily(false)} } day={toDay} /> : null }
       </section>
     </>
   )
@@ -199,7 +206,6 @@ function Home() {
     <Joo>
       <Header />
       <Article />
-      <Snowfall color="white" snowflakeCount={200} />
     </Joo>
   );
 }

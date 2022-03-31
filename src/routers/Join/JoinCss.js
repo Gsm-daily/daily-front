@@ -156,8 +156,8 @@ body {
 
 @keyframes test{
 
-0%{top:-300px;}
-100%{top:373px;}
+0%{top:-30vh;}
+100%{top:50vh;}
 
 }
 

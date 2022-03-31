@@ -27,8 +27,8 @@ function WaveEffect() {
                 <Wave fill='#FCE9E9'
                     paused={false}
                     options={{
-                        height: 40,
-                        amplitude: 70,
+                        height: 50,
+                        amplitude: 40,
                         speed: 0.5,
                         points: 2
                     }}

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { useState, useEffect } from "react";
+import React,{ useState, useEffect } from "react";
 // import './Join.css';
 import JoinCss from './JoinCss';
 import WaveEffect from '../../components/Wave';

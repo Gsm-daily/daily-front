@@ -72,7 +72,7 @@ h4 {
 /*Body*/
 
 #MainSection {
-  height:92.9vh;
+  height:92vh;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
